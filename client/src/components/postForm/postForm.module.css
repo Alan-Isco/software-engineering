@@ -1,3 +1,5 @@
+@import '../../App.css';
+
 .postForm {
   position: fixed;
   top: 0;
@@ -16,9 +18,71 @@
     padding: 20px;
     border-radius: 8px;
     display: flex;
+    flex-direction: column;
     .Header {
-      .formGroup {
-        
+      text-align:  center;
+      margin: 10px 10px;
+      span{
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+    form{
+      /* margin: 10px; */
+      display: flex;
+
+      .formGroup{
+        margin: 10px 10px;
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+        .label{
+           font-size: 16px;
+           font-weight: 500;
+         }
+        input{
+          width: 200px;
+          background-color: transparent;
+          color: var(--text-color);
+          border-radius: 5px;
+          padding: 10px;
+          border: 1px solid var(--border);
+        }
+        textarea{
+          width: 200px;
+          background-color: transparent;
+          color: var(--text-color);
+          border-radius: 5px;
+          padding: 10px;
+          border: 1px solid var(--border); 
+          overflow: scroll;
+          &::-webkit-scrollbar{
+            display: none;
+          }
+        }
+        select{
+          width: 200px;
+          background-color: transparent;
+          color: var(--text-color);
+          border-radius: 5px;
+          padding: 10px;
+          border: 1px solid var(--border);
+          option{
+            background-color: var(--bg-soft);
+          }
+          option:checked{
+            background-color: black;
+          }
+        }
+      }
+      button{
+        background-color: rgb(57, 113, 130);
+        color: var(--text-color);
+        border-radius: 5px;
+        padding: 10px 30px;
+        border: 1px solid var(--border);
+        cursor: pointer;
+        margin: 10px;
       }
     }
   }
