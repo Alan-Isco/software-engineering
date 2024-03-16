@@ -14,7 +14,7 @@ function Dashboard() {
   };
 
   const renderModalContent = () => {
-    return <PostForm handlePost={ handleCloseModal } />;
+    return <PostForm handlePost={handleCloseModal} />;
   };
 
   return (
@@ -111,171 +111,22 @@ function Dashboard() {
               </div>
             </div>
             <div className={styles.right}>
-              <div className={styles.cards}>
-              <CatCard />
-              <CatCard />
-              <CatCard />
-              <CatCard />
-              <CatCard />
-              <CatCard />
+              <div className={styles.cardsTop}>
+                <span className="material-symbols-outlined">arrow_forward_ios</span>
+              </div>
+              <div className={styles.cardsDiv}>
+                <div className={styles.cards}>
+                  <CatCard />
+                  <CatCard />
+                  <CatCard />
+                  <CatCard />
+                  <CatCard />
+                  <CatCard />
+                </div>
               </div>
             </div>
           </div>
         </div>
-        {/* <div className={styles.cards}>
-        <div className={styles.card}>
-          <div className={styles.cardTop}>
-            <span>Guided Tour</span>
-            <span className="material-symbols-outlined">close</span>
-          </div>
-          <div className={styles.cardBody}>
-            <p>
-              Use your workpace to manage draft jobs, post, action and completed
-              work.
-            </p>
-          </div>
-        </div>
-        <div className={styles.card}>
-          <div className={styles.cardTop}>
-            <span>Guided Tour</span>
-            <span className="material-symbols-outlined">close</span>
-          </div>
-          <div className={styles.cardBody}>
-            <span>Steps to post a job</span>
-            <p>
-              Use your workpace to manage draft jobs, post, action and completed
-              work.
-            </p>
-          </div>
-          <div className={styles.cardFooter}>
-            <span>
-              <a>Try it out</a>.
-            </span>
-          </div>
-        </div>
-        <div className={styles.card}>
-          <div className={styles.cardTop}>
-            <div className={styles.left}>
-              <span className="material-symbols-outlined">lightbulb</span>
-              <span>Tip</span>
-            </div>
-            <div className={styles.right}>
-              <span className="material-symbols-outlined">close</span>
-            </div>
-          </div>
-          <div className={styles.cardBody}>
-            <span>Steps to post a job</span>
-            <p>
-              Use your workpace to manage draft jobs, post, action and completed
-              work.
-            </p>
-          </div>
-          <div className={styles.cardFooter}>
-            <span>
-              <a>Try it out.</a>
-            </span>
-          </div>
-        </div>
-        <div className={styles.card}>
-          <div className={styles.cardTop}>
-            <div className={styles.left}>
-              <span className="material-symbols-outlined">lightbulb</span>
-              <span>Tip</span>
-            </div>
-            <div className={styles.right}>
-              <span className="material-symbols-outlined">close</span>
-            </div>
-          </div>
-          <div className={styles.cardBody}>
-            <span>Other opportunity</span>
-            <p>
-              We stand out because not only do we provide a chance for online
-              labour but also manual labor.
-            </p>
-          </div>
-          <div className={styles.cardFooter}>
-            <span>Try posting jobs for manual labour.</span>
-          </div>
-        </div>
-      </div>
-      <div className={styles.section}>
-        <div className={styles.cards}>
-          <div className={styles.card}>
-            <div className={styles.cardTop}>
-              <span>Guided Tour</span>
-              <span className="material-symbols-outlined">close</span>
-            </div>
-            <div className={styles.cardBody}>
-              <p>
-                Use your workpace to manage draft jobs, post, action and
-                completed work.
-              </p>
-            </div>
-          </div>
-          <div className={styles.card}>
-            <div className={styles.cardTop}>
-              <span>Guided Tour</span>
-              <span className="material-symbols-outlined">close</span>
-            </div>
-            <div className={styles.cardBody}>
-              <span>Steps to post a job</span>
-              <p>
-                Use your workpace to manage draft jobs, post, action and
-                completed work.
-              </p>
-            </div>
-            <div className={styles.cardFooter}>
-              <span>
-                <a>Try it out</a>.
-              </span>
-            </div>
-          </div>
-          <div className={styles.card}>
-            <div className={styles.cardTop}>
-              <div className={styles.left}>
-                <span className="material-symbols-outlined">lightbulb</span>
-                <span>Tip</span>
-              </div>
-              <div className={styles.right}>
-                <span className="material-symbols-outlined">close</span>
-              </div>
-            </div>
-            <div className={styles.cardBody}>
-              <span>Steps to post a job</span>
-              <p>
-                Use your workpace to manage draft jobs, post, action and
-                completed work.
-              </p>
-            </div>
-            <div className={styles.cardFooter}>
-              <span>
-                <a>Try it out</a>.
-              </span>
-            </div>
-          </div>
-          <div className={styles.card}>
-            <div className={styles.cardTop}>
-              <div className={styles.left}>
-                <span className="material-symbols-outlined">lightbulb</span>
-                <span>Tip</span>
-              </div>
-              <div className={styles.right}>
-                <span className="material-symbols-outlined">close</span>
-              </div>
-            </div>
-            <div className={styles.cardBody}>
-              <span>Other opportunities</span>
-              <p>
-                We stand out because not only do we provide a chance for online
-                labour but also manual labor.
-              </p>
-            </div>
-            <div className={styles.cardFooter}>
-              <span>Try posting jobs for manual labour.</span>
-            </div>
-          </div>
-        </div> 
-  </div> */}
         {isModalOpen && renderModalContent()}
       </div>
     </div>
