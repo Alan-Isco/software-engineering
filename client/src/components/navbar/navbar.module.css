@@ -2,10 +2,10 @@
 
 .navbar {
   display: flex;
-  align-items: space-between;
+  /* align-items: space-between; */
   justify-content: space-between;
-  padding: 10px 20px;
-  height: 50px;
+  padding: 5px 20px;
+  height: 40px;
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
@@ -47,16 +47,18 @@
       gap: 10px;
       border: 1px solid var(--border);
       border-radius: 50px;
-      padding: 5px;
+      padding: 0px 5px;
 
       input {
         border: none;
-        width: 200px;
+        width: 300px;
         background-color: transparent;
         color: var(--text-color);
         border-radius: 50px;
-        padding: 10px;
+        margin: 10px 0px;
         border-color: transparent;
+        height: 100%;
+        font-size: 16px;
 
         @media (max-width: 768px) {
           /* display: none; */
@@ -88,6 +90,7 @@
       align-items: center;
       gap: 10px;
       font-weight: 500;
+      cursor: pointer;
 
       img {
         width: 30px;
