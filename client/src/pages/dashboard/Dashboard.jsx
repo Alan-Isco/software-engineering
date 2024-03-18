@@ -55,7 +55,7 @@ function Dashboard() {
               <span>RECOMMENDED FOR YOU</span>
               <div className={styles.details}>
                 <div className={styles.info}>
-                  <span></span>
+                  <span></span>n
                   <p>Get Matched with freelancers.</p>
                   <p>Create a brief and get paired</p>
                 </div>
